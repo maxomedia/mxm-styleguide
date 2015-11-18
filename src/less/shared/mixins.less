@@ -1,0 +1,28 @@
+ /* Map a background color to font color and define
+ * hover color (does not work well with very dark colors)
+ * @param  {string} @name  Name of the background-color variable
+ * @param  {string} @color Name of the font color variable
+ * @return {undefined}
+ */
+.map-colors(@name, @color) {
+	.bg-@{name} {
+		background-color: @@name;
+		color: @color;
+		&.hover:hover { background-color: darken(@@name, 10%); }
+	}
+	.color-@{name} {
+		color: @@name;
+		&.hover:hover { color: darken(@@name, 15%); }
+	}
+}
+
+.generateFont(@font-path,@font-name){
+  @font-face {
+    font-family: ~"@{font-name}";
+    src: ~"url('@{font-path}@{font-name}.eot')";
+    src: ~"url('@{font-path}@{font-name}.eot?#iefix') format('embedded-opentype')",
+        ~"url('@{font-path}@{font-name}.woff') format('woff')",
+        ~"url('@{font-path}@{font-name}.ttf') format('truetype')",
+        ~"url('@{font-path}@{font-name}.svg#@{font-name}') format('svg')";
+  }
+}
