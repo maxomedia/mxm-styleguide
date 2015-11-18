@@ -114,8 +114,8 @@ var options = {
 		// Destination for html files
 		dest: destination,
 
-		// Entry points for views resulting in HTML pages
-		views: 'src/jade/views/**/*.jade',
+		// Entry points for views/pages resulting in HTML pages
+		views: 'src/jade/pages/**/*.jade',
 
 		// Options to pass to gulp-jade
 		options: {
