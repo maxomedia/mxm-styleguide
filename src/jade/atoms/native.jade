@@ -4,6 +4,7 @@ h2#typography Typography
 
 div.row
 	div.col-sm-4
+		h3 Headings
 		h1= panagram
 		h2= panagram
 		h3= panagram
@@ -12,6 +13,7 @@ div.row
 		h6= panagram
 		
 	div.col-sm-4
+		h3 Font styles
 		p
 			strong= panagram
 		p
@@ -25,11 +27,33 @@ div.row
 			blockquote Use the force, Harry. <small>-Gandalf</small>
 		
 	div.col-sm-4
+		h3 Font families
 		p(style="font-family: sans-serif")= panagram
 		p(style="font-family: serif")= panagram
 		p(style="font-family: monospace")= panagram
 
-h2#tables Tables
+h2#lists Lists
+div.row
+	div.col-sm-4
+		h3 Unordered list
+		ul
+			-var i = 5; while(i--)
+				li Item #{5-i}
+
+	div.col-sm-4
+		h3 Ordered list
+		ol
+			-var i = 5; while(i--)
+				li Item #{5-i}
+
+	div.col-sm-4
+		h3 Definition list
+		dl
+			-var i = 5; while(i--)
+				dt Term #{5-i}
+				dd Definition #{5-i}
+
+h3 Table
 table
 	tr
 		th #
