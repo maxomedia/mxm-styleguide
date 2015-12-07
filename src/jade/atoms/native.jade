@@ -1,0 +1,46 @@
+- var panagram = 'Bass verwünscht jäh Xylophon, Querflöte und ganze Musik.'
+
+h2#typography Typography
+
+div.row
+	div.col-sm-4
+		h1= panagram
+		h2= panagram
+		h3= panagram
+		h4= panagram
+		h5= panagram
+		h6= panagram
+		
+	div.col-sm-4
+		p
+			strong= panagram
+		p
+			i= panagram
+		p
+			small= panagram
+		p
+			abbr(title='Abbreviation') Abbr.
+		p 20m<sup>2</sup> and H<sub>2</sub>O
+		p
+			blockquote Use the force, Harry. <small>-Gandalf</small>
+		
+	div.col-sm-4
+		p(style="font-family: sans-serif")= panagram
+		p(style="font-family: serif")= panagram
+		p(style="font-family: monospace")= panagram
+
+h2#tables Tables
+table
+	tr
+		th #
+		th Column heading
+		th Column heading
+		th Column heading
+
+	- var i = 5; while(i--)
+		tr
+			td= 5-i
+			td Column content
+			td Column content
+			td Column content
+	
