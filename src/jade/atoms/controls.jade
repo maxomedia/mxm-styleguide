@@ -1,0 +1,32 @@
+- var err = 'Dis be an error, mon.'
+
+h2#controls Controls
+
+//- Buttons
+div.row
+	div.col-sm-6
+		button Button
+		input(type="button" value="Input[type=\"button\"]")
+		input(type="submit" value="Input[type=\"submit\"]")
+	div.col-sm-6
+		input.error(type="text" placeholder="Textbox")
+
+//- Textbox
+div.row
+	div.col-sm-4
+		input(type="text" placeholder="Textbox")
+	div.col-sm-4
+		input.error(type="text" placeholder="Textbox")
+		p.error= err
+	div.col-sm-4
+		input(disabled type="text" placeholder="Textbox")
+
+//- Textarea
+div.row
+	div.col-sm-4
+		textarea(placeholder="Textarea")
+	div.col-sm-4
+		textarea.error(placeholder="Textarea")
+		p.error= err
+	div.col-sm-4
+		textarea(disabled placeholder="Textarea")
