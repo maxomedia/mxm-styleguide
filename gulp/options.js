@@ -134,7 +134,7 @@ var options = {
 
 		// Destination folder for the less files
 		// containing the mixin
-		lessDest: 'src/less/core/',
+		lessDest: 'src/less/shared/',
 
 		// Where the browser can find your font files
 		root: webroot + '/fonts'
