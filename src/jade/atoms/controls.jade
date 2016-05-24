@@ -1,0 +1,53 @@
+- var err = 'Dis be an error, mon.'
+
+h2#controls Controls
+
+//- Buttons
+div.row
+	div.col-sm-6
+		h3 Buttons
+		p
+			button Button
+		p
+			input(type="button" value="Input[type=\"button\"]")
+		p
+			input(type="submit" value="Input[type=\"submit\"]")
+		p
+			a.button Link [class="button"]
+			
+	div.col-sm-6
+		h3 Input types
+		p
+			input(type="email" placeholder="E-Mail")
+		p
+			input(type="password" placeholder="Password")
+		p
+			input(type="number" placeholder="Number")
+		p
+			input(type="date" placeholder="Date")
+		p
+			input(type="url" placeholder="Url")
+		p
+			input(type="search" placeholder="Search")
+		p
+			input(type="color" value="#ffffff")
+
+//- Textbox
+div.row
+	div.col-sm-4
+		input(type="text" placeholder="Textbox")
+	div.col-sm-4
+		input.error(type="text" placeholder="Textbox")
+		p.error= err
+	div.col-sm-4
+		input(disabled type="text" placeholder="Textbox")
+
+//- Textarea
+div.row
+	div.col-sm-4
+		textarea(placeholder="Textarea")
+	div.col-sm-4
+		textarea.error(placeholder="Textarea")
+		p.error= err
+	div.col-sm-4
+		textarea(disabled placeholder="Textarea")

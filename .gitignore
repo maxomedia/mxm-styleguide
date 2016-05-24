@@ -7,12 +7,22 @@ test
 tests
 temp
 
+# Galen reports
+__tests__/reports
+
+# Cache files
+*.gulp
+
 # Project files
 *.sublime-project
 *.sublime-workspace
 *.lnk
 
 # Built assets
+dist
+dest
+Assets
+
 # for vendor files use css/vendor/vendor.css
 *.map
 Assets
